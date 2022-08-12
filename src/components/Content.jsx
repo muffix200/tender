@@ -9,7 +9,7 @@ import {
   Chip,
 } from "@mui/material";
 import Table from "./Table";
-import EastIcon from "@mui/icons-material/East";
+import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 import visaImg from "../assets/images/visa.jpg";
 import { themeContext } from "../App";
 export default function Content() {
@@ -66,7 +66,7 @@ export default function Content() {
                     }}
                   >
                     <Typography
-                      variant="h6"
+                      variant="subtitle1"
                       sx={{
                         mb: 1,
                         mt: 1,
@@ -91,7 +91,6 @@ export default function Content() {
                     />
                   </Box>
                   <Typography
-                    variant="subtitle1"
                     sx={{
                       mb: 1,
                       mt: 1,
@@ -105,7 +104,7 @@ export default function Content() {
                   </Typography>
                 </Box>
                 <Typography
-                  variant="h4"
+                  variant="h5"
                   sx={{
                     mb: 1,
                     mt: 1,
@@ -117,10 +116,7 @@ export default function Content() {
                   }}
                 >
                   $25
-                  <Typography
-                    variant="subtitle1"
-                    sx={{ color: "text.default", opacity: 0.8 }}
-                  >
+                  <Typography sx={{ color: "text.default", opacity: 0.8 }}>
                     /month
                   </Typography>
                 </Typography>
@@ -132,9 +128,10 @@ export default function Content() {
                   justifyContent: "flex-start",
                   paddingLeft: "3px",
                   color: "#ed7415",
+                  fontSize: "13px !important",
                 }}
                 variant="none"
-                endIcon={<EastIcon />}
+                endIcon={<ArrowForwardRoundedIcon />}
               >
                 Upgrade Plans
               </Button>
@@ -160,7 +157,7 @@ export default function Content() {
               </Typography>
               <Box
                 sx={{
-                  backgroundColor: "background.main",
+                  backgroundColor: "background.default",
                   borderRadius: "10px",
                   padding: "10px 20px",
                   display: "flex",
@@ -172,7 +169,6 @@ export default function Content() {
                 <Box sx={{ display: "flex", alignItems: "center" }}>
                   <img src={visaImg} alt="err" className="visa-img" />
                   <Typography
-                    variant="subtitle2"
                     sx={{
                       mb: 1,
                       mt: 1,
@@ -182,7 +178,6 @@ export default function Content() {
                   >
                     Visa **** 6546
                     <Typography
-                      variant="subtitle2"
                       sx={{
                         opacity: 1,
                         fontWeight: 400,
@@ -196,9 +191,10 @@ export default function Content() {
                 </Box>
                 <Button
                   sx={{
-                    width: "75px",
-                    height: "35px",
+                    width: "70px",
+                    height: "30px",
                     borderRadius: "10px",
+                    fontSize: "11px",
                     backgroundColor: isDark ? "#212530" : "#f6f6f6",
                     border: isDark
                       ? "1px solid rgba(255,255,255,0.1)"
@@ -219,7 +215,6 @@ export default function Content() {
             variant="outlined"
           >
             <Typography
-              variant="subtitle1"
               sx={{
                 mb: 1,
                 mt: 1,
@@ -230,7 +225,6 @@ export default function Content() {
               Subscription Usage
             </Typography>
             <Typography
-              variant="subtitle1"
               sx={{
                 mb: 1,
                 mt: 1,
@@ -253,8 +247,6 @@ export default function Content() {
             <Typography
               variant="subtitle1"
               sx={{
-                mb: 1,
-                mt: 1,
                 opacity: 1,
                 fontWeight: 400,
               }}

@@ -56,18 +56,18 @@ export default function Sidebar() {
             closeFunc(false);
           }}
           sx={{
+            padding: "5px",
             backgroundColor: isDark ? "#323849" : "#EEE",
             borderRadius: "10px",
           }}
         >
           <ArrowBackIcon />
         </IconButton>
-        <Typography sx={{ marginLeft: "10px" }} variant="h5">
+        <Typography sx={{ marginLeft: "15px" }} variant="h6">
           Settings
         </Typography>
       </Box>
       <Typography
-        variant="subtitle1"
         sx={{
           paddingLeft: "10px",
           color: "text.secondary",
@@ -94,11 +94,10 @@ export default function Sidebar() {
                       : "none",
                 }}
               >
-                <ListItemIcon sx={{ minWidth: "40px" }}>
+                <ListItemIcon sx={{ minWidth: "36px" }}>
                   {index === 0 && (
                     <BusinessRoundedIcon
                       sx={{
-                        fontSize: "28px",
                         color: "text.default",
                       }}
                     />
@@ -106,7 +105,6 @@ export default function Sidebar() {
                   {index === 1 && (
                     <PeopleAltOutlinedIcon
                       sx={{
-                        fontSize: "28px",
                         color: "text.default",
                       }}
                     />
@@ -114,7 +112,6 @@ export default function Sidebar() {
                   {index === 2 && (
                     <PaymentOutlinedIcon
                       sx={{
-                        fontSize: "28px",
                         color: "text.default",
                       }}
                     />
@@ -122,15 +119,7 @@ export default function Sidebar() {
                   {index === 3 && (
                     <BarChartRoundedIcon
                       sx={{
-                        fontSize: "28px",
                         color: "text.default",
-                      }}
-                    />
-                  )}
-                  {index === 4 && (
-                    <MarkChatUnreadOutlinedIcon
-                      sx={{
-                        fontSize: "28px",
                       }}
                     />
                   )}
@@ -142,7 +131,6 @@ export default function Sidebar() {
         )}
       </List>
       <Typography
-        variant="subtitle1"
         sx={{
           paddingLeft: "10px",
           mb: 0,
@@ -164,11 +152,10 @@ export default function Sidebar() {
                 height: "40px",
               }}
             >
-              <ListItemIcon sx={{ minWidth: "40px" }}>
+              <ListItemIcon sx={{ minWidth: "36px" }}>
                 {index === 0 && (
                   <NotificationsActiveOutlinedIcon
                     sx={{
-                      fontSize: "28px",
                       color: "text.default",
                     }}
                   />
@@ -176,7 +163,6 @@ export default function Sidebar() {
                 {index === 1 && (
                   <ExtensionOutlinedIcon
                     sx={{
-                      fontSize: "28px",
                       color: "text.default",
                     }}
                   />
@@ -188,7 +174,6 @@ export default function Sidebar() {
         ))}
       </List>
       <Typography
-        variant="subtitle1"
         sx={{
           paddingLeft: "10px",
           mb: 1,
@@ -210,11 +195,10 @@ export default function Sidebar() {
                 height: "40px",
               }}
             >
-              <ListItemIcon sx={{ minWidth: "40px" }}>
+              <ListItemIcon sx={{ minWidth: "36px" }}>
                 {index === 0 && (
                   <AccountCircleOutlinedIcon
                     sx={{
-                      fontSize: "28px",
                       color: "text.default",
                     }}
                   />

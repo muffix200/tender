@@ -70,13 +70,13 @@ export default function CustomizedTables() {
               <StyledTableCell align="right">
                 <Button
                   sx={{
-                    width: "95px",
+                    width: "105px",
                     height: "35px",
-                    fontSize: "13px !important",
+                    fontSize: "11px !important",
                     borderRadius: "10px",
                     backgroundColor: "background.default",
                     color: "text.primary",
-                    fontWeight: "400",
+                    fontWeight: "500",
                     filter: "brightness(1.1)",
                   }}
                 >

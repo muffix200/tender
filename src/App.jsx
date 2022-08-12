@@ -1,20 +1,15 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
-import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
-import MenuIcon from "@mui/icons-material/Menu";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import { createContext, useState } from "react";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
+import { createContext, useState } from "react";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Button } from "@mui/material";
 import Content from "./components/Content";
 import Sidebar from "./components/Sidebar";
@@ -23,16 +18,17 @@ const drawerWidth = 300;
 function ResponsiveDrawer(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
-
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
-  // sidebar
-
-  // sidebar
   const container =
     window !== undefined ? () => window().document.body : undefined;
   const light = {
+    typography: {
+      body1: {
+        fontSize: 14,
+      },
+    },
     palette: {
       mode: "light",
       background: {
@@ -50,6 +46,11 @@ function ResponsiveDrawer(props) {
     },
   };
   const dark = {
+    typography: {
+      body1: {
+        fontSize: 14,
+      },
+    },
     palette: {
       mode: "dark",
       background: {
@@ -61,9 +62,9 @@ function ResponsiveDrawer(props) {
         main: "#ffff",
       },
       text: {
+        default: "#929ab5",
         primary: "#f6f6f6",
         secondary: "#4f5874",
-        default: "#929ab5",
       },
     },
   };
